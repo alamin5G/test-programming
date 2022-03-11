@@ -3,7 +3,8 @@
 #include <stdio.h>
 
 void main(){
-    int even = 1, odd, sum=0,i;
+
+    int even, odd, sum=0,i;
     printf("Enter even number to calculate the sum of 2 to n numbers: ");
     scanf("%d", &even);
     odd = even%2;
