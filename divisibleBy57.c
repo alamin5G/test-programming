@@ -14,6 +14,8 @@ void main(){
      int aNumber; 
      printf("Enter a number to check it is divisible by 5 or 7 : ");
      scanf("%d", &aNumber);
+
+     //individual can divisible 
      
      if(aNumber%5 == 0){
          printf("%d is divisible by 5\n", aNumber);
@@ -21,5 +23,13 @@ void main(){
 
      if (aNumber%7 == 0){
         printf("%d is divisible by 7", aNumber);
+     }
+
+     //or second condition is 5 and 7 both can divided each others at the same time
+
+     if((aNumber%5 == 0) &&(aNumber%7 == 0)){
+         printf("\n\n%d is divisible by both 5 and 7.");
+     }else {
+         printf("\n\n%d is not divisible by both 5 and 7");
      }
 }
