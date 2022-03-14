@@ -27,8 +27,6 @@ void main(){
         scanf("%d", &n);
         odd = n%2;
     }
-    
-    
 
     for(row=1; row<=n; row++){
         for(col =1; col<=n; col++){
