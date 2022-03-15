@@ -10,6 +10,8 @@
  * 
  */
 #include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
 void main(){
     int arr[0][0], a, b, row, col;
 
@@ -19,7 +21,7 @@ void main(){
     printf("The matrix is: \n");
     for(a=1; a<=row; a++){
         for(b=1; b<=col; b++){
-            printf("%d  ", b+a);
+            printf("%d  ", rand()%10);
         }
         printf("\n");
     }
