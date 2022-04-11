@@ -12,7 +12,7 @@
 
 #include <stdio.h>
 
-int prime(int n);
+int prime(int i, int n);
 
 int main()
 {
@@ -23,7 +23,7 @@ int main()
 
     if (n >= 2)
     {
-        f = prime(n);
+        f = prime(2, n);
         if (f != 0)
         {
             printf("%d is prime\n", n);
@@ -39,20 +39,21 @@ int main()
     return 0;
 }
 
-int prime(int n)
+int prime(int i, int n)
 {
-    int i, f;
 
-    if (n == 0)
-    {
-        return 0;
-    }
-    else if (n == 1)
+    if (n == i)
     {
         return 1;
     }
     else
     {
-        return prime(n % 2);
+        if (n%i==0)
+        {
+            return 0;
+        }else
+        {
+            return prime(i+1, n);
+        }
     }
 }
