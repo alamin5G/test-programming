@@ -25,7 +25,7 @@ int main()
     float csc183, csc184, mat147, art204, eng102;
     int crCsc183 = 3, crCsc184 = 1, crMat147 = 3, crArt204 = 3, crEng102 = 3, totalCredit;
     float gradePoint, SGPA;
-    char *name;
+    char name[40];
 
     printf("--Welcome to IUBAT SGPA Calculation System---\n");
     printf("Enter your full name: \n");
