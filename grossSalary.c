@@ -1,6 +1,6 @@
 /**
  * @file grossSalary.c
- * Write a program to input basic salary of an employee and calculate its Gross salary according to 
+ * 25 Write a program to input basic salary of an employee and calculate its Gross salary according to 
 following:
 Basic Salary <= 10000: HRA = 20%, DA = 80%
 Basic Salary <= 20000: HRA = 25%, DA = 90%
